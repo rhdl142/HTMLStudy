@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<!-- ex09_emmet.html -->
+		<!--
+			Emmet, Zen-Coding
+				- http://emmet.io > download > java > url 복사
+				- HTML, CSS 코드를 쉽게 작성해주는 플러그인
+				- CSS 선택자를 사용
+				
+				- Help > Install new Software > Url 복사한거 붙이기
+				
+				- ctrl + e
+		-->
+		
+		<h1>태그 선택자</h1>
+		
+		<!-- div -->
+		<div></div>
+		<!-- a -->
+		<a href="http://naver.com">네이버</a>
+		
+		<h1>아이디 선택자</h1>
+		
+		<!-- h1#subject -->
+		<h1 id="subject"></h1>
+		
+		<h1>클래스 선택자</h1>
+		
+		<!-- h1.class -->
+		<h1 class="class"></h1>
+		<!-- div.box.item.red -->
+		<div class="box item red"></div>
+		
+		<h1>속성 선택자</h1>
+		
+		<!-- a[target] -->
+		<a href="" target=""></a>
+		
+		<!-- a[target="_blank"] -->
+		<a href="" target="_blank"></a>
+		
+		<!-- img[width height title] -->
+		<img src="" alt="" width="" height="" title="" />
+		
+		
+		<h1>PCDATA</h1>
+		
+		<!-- div{상자} -->
+		<div>상자</div>
+		
+		<!-- a{네이버} -->
+		<a href="">네이버</a>
+		
+		
+		
+		<!-- div#box1.box.red[title=상자]{내용물입니다.} -->
+		<div id="box1" class="box red" title="상자">내용물입니다.</div>
+		
+		
+		<hr>
+		
+		
+		<!-- div*5 -->
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		
+		<!-- div.item[title]{상자}*3 -->
+		<div class="item" title="">상자</div>
+		<div class="item" title="">상자</div>
+		<div class="item" title="">상자</div>
+		
+		<!-- div#box$*5 -->
+		<div id="box1"></div>
+		<div id="box2"></div>
+		<div id="box3"></div>
+		<div id="box4"></div>
+		<div id="box5"></div>
+		
+		<!-- div{$$.항목}*15 -->
+		<div>01.항목</div>
+		<div>02.항목</div>
+		<div>03.항목</div>
+		<div>04.항목</div>
+		<div>05.항목</div>
+		<div>06.항목</div>
+		<div>07.항목</div>
+		<div>08.항목</div>
+		<div>09.항목</div>
+		<div>10.항목</div>
+		<div>11.항목</div>
+		<div>12.항목</div>
+		<div>13.항목</div>
+		<div>14.항목</div>
+		<div>15.항목</div>
+		
+		<h1>형제 선택자</h1>
+		
+		<!-- div+p -->
+		<div></div>
+		<p></p>
+		
+		<!-- (h1#title$.titles[title=제목]{제목입니다.}+p.content{설명입니다.}*3)*2 -->
+		<h1 id="title1" class="titles" title="제목">제목입니다.</h1>
+		<p class="content">설명입니다.</p>
+		<p class="content">설명입니다.</p>
+		<p class="content">설명입니다.</p>
+		<h1 id="title2" class="titles" title="제목">제목입니다.</h1>
+		<p class="content">설명입니다.</p>
+		<p class="content">설명입니다.</p>
+		<p class="content">설명입니다.</p>
+		
+		<!-- div>a -->
+		<div><a href=""></a></div>
+		
+		<!-- ul#list1>li.item*5 -->
+		<ul id="list1">
+			<li class="item"></li>
+			<li class="item"></li>
+			<li class="item"></li>
+			<li class="item"></li>
+			<li class="item"></li>
+		</ul>
+		
+		
+		<!-- ul#list1>li.item>a{링크}*5 -->
+		<ul id="list1">
+			<li class="item">
+				<a href="">링크</a>
+				<a href="">링크</a>
+				<a href="">링크</a>
+				<a href="">링크</a>
+				<a href="">링크</a>
+			</li>
+		</ul>
+		
+		
+		<!-- ul#list1>(li.item>a{링크})*5 -->
+		<ul id="list1">
+			<li class="item"><a href="">링크</a></li>
+			<li class="item"><a href="">링크</a></li>
+			<li class="item"><a href="">링크</a></li>
+			<li class="item"><a href="">링크</a></li>
+			<li class="item"><a href="">링크</a></li>
+		</ul>
+		
+		
+		<h1>10행 5열 테이블</h1>
+		
+		table>tr*10>td.cell*5
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

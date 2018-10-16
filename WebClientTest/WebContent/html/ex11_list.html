@@ -1,104 +1,179 @@
-List, 목록
-   
-   1.<ol>
-      - 순서가 있는 목록
-      - Ordered List
-   2. <ul>
-      - 순서가 없는 목록
-      - Unordered List
-   3. <dl>
-      - 정의 목록(용어 목록)
-      - Definition List
-   4. <li>
-      - 목록의 항목
-      - list Item
-      --//자동 들여쓰기 및 번호가 매겨진다.(ol에서는)
-      --//자동 들여쓰기 및 글머리 기호가 매겨진다
 
-   
-   
-    -->
-    
-    
-    <h1>오늘의 할 일</h1>
-    
-    
-    <ol type="i">
-       <li>마트에서 장보기</li>
-       <li>
-       HTML 정리하기
-          <ol type ="1">
-            <li>태그 정리하기</li>                
-             <li>속성 정리하기</li>
-             <li>PCDATA 정리하기</li>
-          </ol>
-       </li>
-          
-          
-       <li>강아지 밥주기</li>
-       <li>이클립스 설치하기</li>
-    </ol>
-    
-    
-    <h1>오늘의 할 일</h1>
-    
-    
-    <ol start="5">
-       <li>마트에서 장보기</li>
-       <li>HTML 정리하기</li>
-       <li value ="10">강아지 밥주기</li>
-       <li>이클립스 설치하기</li>
-    </ol>
-    
-    
-    
-     <ol reversed>
-       <li>마트에서 장보기</li>
-       <li>HTML 정리하기</li>
-       <li>강아지 밥주기</li>
-       <li>이클립스 설치하기</li>
-    </ol>
-    
-    <h1>내일의 할 일</h1>
-    
-    <!-- bullet : 불릿  -->
-    
-    <ul type="square">
-       <li>팀 회식</li>
-       <li>사우나 가기</li>
-       <li>오라클 설치하기</li>
-       <li>고양이 밥주기</li>
-    </ul>
-    
-    <b1> 자바 용어</b1>
-    
-    
-    <dt>클래스</dt><!-- definition term. 용어 -->
-      <dd>클래스가 어쩌구 저쩌구 블라 블라~ 어쩌구 저쩌구 블라 블라~ 어쩌구 저쩌구 블라 블라~ 어쩌구 저쩌구 블라 블라~ 어쩌구 저쩌구 블라 블라~ 어쩌구 저쩌구 블라 블라~ 어쩌구 저쩌구 블라 블라~ 어쩌구 저쩌구 블라 블라~</dd><!-- definition description. 용어 설명 -->
-      <dt>오라클</dt>
-      <dd>어쩌구 저쩌구 블라 블라~ 어쩌구 저쩌구 블라 블라~ 어쩌구 저쩌구 블라 블라~ 어쩌구 저쩌구 블라 블라~ </dd>
-      <dt>HTML</dt>
-      <dd>어쩌구 저쩌구 블라 블라~ 어쩌구 저쩌구 블라 블라~ 어쩌구 저쩌구 블라 블라~ 어쩌구 저쩌구 블라 블라~ 어쩌구 저쩌구 블라 블라~ 어쩌구 저쩌구 블라 블라~ 어쩌구 저쩌구 블라 블라~ 어쩌구 저쩌구 블라 블라~ 어쩌구 저쩌구 블라 블라~ 어쩌구 저쩌구 블라 블라~ </dd>
-   </dl>
-    
-    <!--// 순수 HTML의 결과물 완성도, 세련도 낮음 촌스럽다. 순수 HTML 결과물 + CSS -현재 웹사이트 페이지
-    ****순수 HTML의 결과물 그대로 생각하면 안된다. -> 모양이 완전히 바뀐다.(CSS)  -->
-    
-    
-     <h1>오늘의 할 일</h1>
-    
-    <ol id="list1">
-       <li>마트에서 장보기</li>
-       <li>HTML 정리하기</li>
-       <li>강아지 밥주기</li>
-       <li>이클립스 설치하기</li>
-    </ol>
-    
-    <style>
-       #list1{ list-style: none; padding-left: 0px;}
-       #list1>li{float: left; background: yellow; margin: 10px;}
-    
-    </style>
-    
-    
-    
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link rel="stylesheet" href="/WebClientTest/css/ex01.css">
+</head>
+<body>
+	<!-- ex11_list.htm -->
+	
+	<!--  
+	
+	순수 HTML의 결과물
+	- 완성도 낮음
+	- 세련도 낮음
+	- 촌스럽다.
+	
+	순수 HTML 결과물 + CSS
+	- 현재 웹사이트 페이지
+	
+	*** 순수 HTML의 결과물 그대로 생각하면 안된다. -> 모양이 완전히 바뀌다.(CSS)
+
+
+
+
+	
+	List, 목록
+	
+	1. <ol>
+		- 순서가 있는 목록
+		- Ordered List
+	
+	2. <ul>
+		- 순서가 없는 목록
+		- Unordered List
+	
+	3. <dl>
+		- 정의 목록(용어 목록)
+		- Definition List
+	
+	4. <li>
+		- 목록의 항목
+		- List Item
+	
+	-->
+	
+	<h1>오늘의 할일</h1>
+	
+	<ol type="A">
+		<li><b>마트</b>에서 장보기</li>
+		<li>
+		HTML 정리하기
+			<ol type="a">
+				<li>태그 정리하기</li>
+				<li>속성 정리하기</li>
+				<li>PCDATA 정리하기</li>
+			</ol>
+		</li>
+		<li>강아지 밥주기</li>
+		<li>이클립스 설치하기</li>
+	</ol>
+	
+	<h1>내일의 할일</h1>
+	
+	<!-- bullet: 불릿 -->
+	<ul type="square">
+		<li>팀회식</li>
+		<li>사우나 가기</li>
+		<li>오라클 설치하기</li>
+		<li>고양이 밥주기</li>
+	</ul>
+	
+	
+	
+	
+	
+	<h1>오늘의 할일</h1>
+	
+	<ol start="5">
+		<li><b>마트</b>에서 장보기</li>
+		<li>HTML 정리하기</li>
+		<li value="10">강아지 밥주기</li>
+		<li>이클립스 설치하기</li>
+	</ol>
+	
+	
+	
+	
+	<h1>오늘의 할일</h1>
+	
+	<ol reversed>
+		<li><b>마트</b>에서 장보기</li>
+		<li>HTML 정리하기</li>
+		<li>강아지 밥주기</li>
+		<li>이클립스 설치하기</li>
+	</ol>
+	
+	
+	
+	
+	<h1>자바 용어</h1>
+	
+	<dl>
+		<dt>클래스</dt><!-- definition term. 용어 -->
+		<dd>클래스가 어쩌구 저쩌구 블라 블라~ 어쩌구 저쩌구 블라 블라~ 어쩌구 저쩌구 블라 블라~ 어쩌구 저쩌구 블라 블라~ 어쩌구 저쩌구 블라 블라~ 어쩌구 저쩌구 블라 블라~ 어쩌구 저쩌구 블라 블라~ 어쩌구 저쩌구 블라 블라~</dd><!-- definition description. 용어 설명 -->
+		<dt>오라클</dt>
+		<dd>어쩌구 저쩌구 블라 블라~ 어쩌구 저쩌구 블라 블라~ 어쩌구 저쩌구 블라 블라~ 어쩌구 저쩌구 블라 블라~ </dd>
+		<dt>HTML</dt>
+		<dd>어쩌구 저쩌구 블라 블라~ 어쩌구 저쩌구 블라 블라~ 어쩌구 저쩌구 블라 블라~ 어쩌구 저쩌구 블라 블라~ 어쩌구 저쩌구 블라 블라~ 어쩌구 저쩌구 블라 블라~ 어쩌구 저쩌구 블라 블라~ 어쩌구 저쩌구 블라 블라~ 어쩌구 저쩌구 블라 블라~ 어쩌구 저쩌구 블라 블라~ </dd>
+	</dl>
+	
+	
+	<p>아시아 경제</p>
+	<p>시사iN</p>
+	<p>전자신문</p>
+	
+	<ol>
+		<li>아시아 경제</li>
+		<li>시사iN</li>
+		<li>전자신문</li>	
+	</ol>
+	
+	
+	<hr>
+	
+	
+	<h1>오늘의 할일</h1>
+	
+	<ol id="list1">
+		<li>마트 장보기</li>
+		<li>HTML 정리하기</li>
+		<li>강아지 밥주기</li>
+		<li>이클립스 설치</li>
+	</ol>
+	
+	<style>
+		#list1 { list-style: none; padding-left: 0px; }
+		#list1 > li { float: left; background: yellow; margin: 10px; }
+	</style>
+	
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
