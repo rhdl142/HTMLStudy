@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style>
+		/*  
+			float
+			- 기존 출력 형태를 꺠고, 기존의 위치에서 벗어나 원래 라인의 좌측 끝이나 우측 끝으로 이동해라
+		*/
+		
+		#pic {
+			float : left;
+			margin : 20px;
+			width : 200px;
+		}
+		
+		#word {
+			color : red;
+			font-weigt : bold;
+			float : left;
+		}
+		
+		h1, p {
+			width : 600px;
+		}
+		
+		h1 {
+			border-bottom : 1px solid gray;
+			border : 1px solid red;
+		}
+		
+		h1 > span {
+			font-size : 14px;
+			font-weight : normal;
+			/* 
+			border : 1px solid red;
+			display : inline-block;
+			width : 430px;
+			text-align : right; 
+			*/
+			float : right;
+			margin-top : 20px;
+		}
+		
+		.box {
+			border : 5px solid gray;
+			width : 100px;
+			height : 100px;
+			float : left;
+		}
+		
+		#box1 {background-color : red;}
+		#box2 {background-color : orange;}
+		#box3 {background-color : yellow;}
+		#box4 {background-color : green;}
+		#box5 {background-color : blue;}
+		
+		
+		#choi > img {
+			border : 1px solid black;
+			width : 130px;
+			float : left;
+		}
+		
+	</style>
+	<body>
+		<!-- ex24_float.html -->
+		
+		<h1>상자(float 사용이 가장 많음)</h1>
+		 
+		<div id="box1" class="box">상자1</div>
+		<div id="box2" class="box">상자2</div>
+		<div id="box3" class="box">상자3</div>
+		<div id="box4" class="box">상자4</div>
+		<div id="box5" class="box">상자5</div>
+		
+		<div style="clear:both;"></div>
+		
+		<p>다른내용입니다.</p>
+		
+		<br><br><br><br><br><br>
+		
+		<h1>최유정</h1>
+		
+		<div id="choi">
+			<img src="../images/c02.jpg" alt="" />
+			<img src="../images/c03.jpg" alt="" />
+			<img src="../images/c04.jpg" alt="" />
+			<img src="../images/c05.jpg" alt="" />
+			<img src="../images/c06.jpg" alt="" />
+			<div style="clear:both;"></div>
+		</div>
+		
+		<div>추가내용</div>
+		
+		<br><br><br><br><br><br><br>
+		
+		<h1>회사소개<span>관리자에게 연락하세요</span></h1>
+		
+		<p>
+			<img src="../images/c01.jpg" id ="pic">
+[앵커]
+
+한 시민이 음주운전 차량을 발견하고 50분 동안 추격했습니다. 
+
+발견 즉시 경찰에 신고했지만 경찰은 뒤늦게 나타나 결국 음주차량의 사고를 막지 못했습니다. 
+
+얼마 전에도 시민이 직접 음주운전자를 쫓아가 경찰에게 넘긴 일이 있었는데요. 
+
+이번에도 경찰의 대응이 아쉽습니다. 
+
+이호준 기자가 보도합니다.
+
+[리포트]
+
+승용차가 좌우로 비틀거립니다.
+
+다른 차량과 부딪칠 뻔한 순간이 계속 이어집니다.
+
+음주운전이 강하게 의심되는 차량입니다.
+
+김찬수 씨는 퇴근길에 이 차량을 발견하고 경찰 신고와 함게 추격을 시작했습니다.
+
+최초 신고 시각은 밤 9시 45분.
+
+[112 신고 통화 : "(음주운전 의심 차량이 있어서요.) 네, 차량번호 보이세요?"]
+
+다른 차량을 들이받을까 우려한 김찬수 씨는 차량을 계속 쫓았습니다.
+
+국도로 빠져나간 운전자는 비틀꺼리며 차에서 나와 용변까지 봅니다.
+
+제2경인고속도로에서 서해안, 영동고속도로까지 추격전은 계속됐습니다.
+
+김 씨는 운전하면서 경찰에 계속 상황을 전해줬습니다.
+
+[112 신고 통화 : "아직도 순찰차가 안 보이신다는 거죠? (네, 시속 100km로 가고 있고요.)"]
+
+[112 신고 통화 : "사고나지 않게 너무 무리하게 쫓지는 마시고요. (지금 30분 넘게 가고 있는데, 경찰은 한번도 못 봤어요.)"]
+
+추격은 50분간 이어졌고 곧 끝날 것 같았습니다.
+
+[112 신고 통화 : "전화 끊겠습니다. (순찰차) 붙었으니까요. (감사합니다. 저희 고속도로순찰대에서 처리하겠습니다.)"]
+
+하지만 음주 차량은 갑자기 졸음쉼터로 들어가면서 다른 차량을 들이받고서야 멈췄습니다.
+
+시민이 계속 경찰에 연락하면서 50킬로미터 넘게 추격을 했지만, 사고를 막지는 못했습니다.
+
+[<span id="word">김찬수</span>/음주 차량 신고 시민 : "당연히 그 사이 오실줄 알았는데, 그 시간 제가 5분 동안 이 운전자를 서서 지켜보는 과정에도 안 오셨으니까요."]
+
+사고차량 운전자는 혈중알코올 농도 0.147% 만취 상태였습니다.
+
+경찰은 추격이 쉽지 않은 상황이었다고 밝혔습니다.
+
+[경기남부지방경찰청 관계자/음성변조 : "만약에 추격을 하고 있다 그랬으면 계속 추격을 했겠죠. 그런데 고속도로상에서 배치는 돼있지만 발견을 못 했잖아요. 거기서 빠져나가 버렸잖아요."]
+
+민갑룡 경찰청장은 지난주 국정감사에서 시민이 신고한 음주차량 추격을 소홀히 한 관할 경찰에 엄중 경고했다고 말했습니다. 
+			
+		</p>
+	</body>
+</html>

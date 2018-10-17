@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style>
+		/*  
+		display
+			- 요소의 출력 방식을 제어
+		*/
+		#cat2 {
+			display : none; /* 랜더링 결과를 만들지 마세요. 출력안함 + 자리없앰 */
+		}
+		
+		.box {
+			border : 1px solid black;
+			width : 150px;
+			height : 150px; 
+			display : inline; /* 해당 태그를 인라인 태그처럼 출력하세요 */
+		}
+		
+		.link {
+			border : 1px solid black;
+			width : 150px;
+			height : 150px; 
+			display : block; /* 해당 태그를 블럭 태그처럼 출력하세요 */
+		}
+		
+		#menu ul {
+			/* border : 1px solid black;	 */
+			padding : 0px;
+			width : 500px;
+		}
+		
+		#menu ul li {
+			display : inline-block; /* 성질(인라인) + 크기 조절가능 */
+			/* outline : 1px solid red; */
+			width : 125px;
+			text-align : center;
+			padding-top : 15px;
+			padding-bottom : 15px;
+			background-color : #eee;
+			border-top : 20px solid #ddd;
+			border-bottom : 20px solid #ddd;
+			font-size : 14px;
+		}
+		
+		#menu ul li:hover {
+			border-top-color : tomato;
+			border-bottom-color : tomato;
+			background-color : #FFE5D4;
+			font-weight : bold;
+			color : #444;
+			cursor : pointer;
+		}
+		
+	</style>
+	<body>
+	
+		<nav id = "menu">
+			<ul>
+				<li>회원</li><li>관리자</li><li>게시판</li><li>통계</li>
+			</ul>
+		</nav>
+	
+		<h1>블럭태그</h1>
+		
+		<div id="box1" class="box">상자1</div>
+		<div id="box2" class="box">상자2</div>
+		<div id="box3" class="box">상자3</div>
+	
+		<h1>인라인 태그</h1>
+		
+		<a href="#" id="link1" class = "link">링크1</a>
+		<a href="#" id="link2" class = "link">링크2</a>
+		<a href="#" id="link3" class = "link">링크3</a>
+	
+		<br>
+	
+		<img src="../images/cat01.jpg" id="cat1">
+		<img src="../images/cat02.jpg" id="cat2">
+		<img src="../images/cat03.jpg" id="cat3">		
+	</body>
+</html>

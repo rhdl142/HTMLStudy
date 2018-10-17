@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style>
+		/*  
+		블럭 태그
+			- 자신의 영역에(한라인) 자신의 내용물만 출력 > 라인을 독점
+			- 너비 100%, 높이 내용물 만큼
+			- 너비와 높이 조절 가능
+			- padding 조절 가능
+		인라인 태그
+			- 자신의 내용과 앞뒤 요소의 내용을 같은 라인 공유
+			- 너비 & 높이 내용물 만큼
+			- 너비 높이 조절 불가능(width height 속성 사용 불가)
+			- padding 조절 불가능 (위아래는 불가능, 양옆은 가능)
+		*/
+		.box, .link {border:1px solid black;}
+		
+		#box2 {width:100px; height:50px; padding : 20px; margin : 20px;}
+		#link2 {width : 100px; height:50px; padding : 20px; margin : 20px;}
+	</style>
+	<body>
+		<h1>블럭태그</h1>
+		
+		<div id="box1" class="box">상자1</div>
+		<div id="box2" class="box">상자2</div>
+		<div id="box3" class="box">상자3</div>
+		
+		<h1>인라인 태그</h1>
+		
+		<!-- a[href="#"id="link$"class="link]{링크$}*3 -->
+		문자열입니다.문자열입니다.문자열입니다.문자열입니다.문자열입니다.문자열입니다.문자열입니다.문자열입니다.문자열입니다.문자열입니다.문자열입니다.문자열입니다.문자열입니다.문자열입니다.문자열입니다.문자열입니다.문자열입니다.문자열입니다.문자열입니다.문자열입니다.문자열입니다.문자열입니다.문자열입니다.
+		<a href="#" id="link1" class = "link">상자1</a>
+		<a href="#" id="link2" class = "link">상자2</a>
+		<a href="#" id="link3" class = "link">상자3</a>
+		문자열입니다.문자열입니다.문자열입니다.문자열입니다.문자열입니다.문자열입니다.문자열입니다.문자열입니다.문자열입니다.문자열입니다.문자열입니다.문자열입니다.문자열입니다.문자열입니다.문자열입니다.문자열입니다.문자열입니다.문자열입니다.문자열입니다.문자열입니다.문자열입니다.문자열입니다.문자열입니다.
+	</body>
+</html>

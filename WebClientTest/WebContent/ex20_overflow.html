@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style>
+		/*
+			1. 부모의 width(X) height(X)
+				- 부모 width(100%)
+				- 부모 height = 컨텐츠의 높이  
+				부모 태그 영역을 벗아날 만큼 자식이 많아지면 > 부모를 빠져나감.
+			
+			2. 부모의 width(O) height(X)
+				- width(정해진 값)
+				- 부모 height = 컨텐츠의 높이
+				
+			3. 부모의 width(X) height(O)
+				- width(100%)
+				- height(정해진 값) > 오버플로우 > 부모를 벗어남
+			
+			4. 부모의 width(O) height(O)
+				- width(정해진 값)
+				- height(정해진 값) > 오버플로우 > 부모를 벗아남
+				
+		*/
+		#box1 {
+			border : 1px solid black;
+			width : 200px; 
+			height : 200px;
+			
+			/* 오버플로우 제어 */
+			overflow :  hidden; /* 데이터는 있지만 보이지 않음 부모 width, height는 고정시켜야함 */
+			overflow :  scroll; /* 항상 스크롤바가 있음 */
+			overflow : visible; /* 오버플로우가 발생하면 전부 보여짐 */
+			overflow : auto; /* overflow가 생기면 스크롤바가 생김 부모 width, height는 고정시켜야함*/
+			overflow : inherit; /*  */
+		}
+		
+		#tbl1 {
+			border : 1px solid black;
+			border-collapse : collapse;
+			width : 200px;
+			height : 200px;
+		}
+		
+		#tbl1 td {
+			border : 1px solid black;
+			/* width : 100px;
+			height : 100px; */
+		}
+		
+	</style>
+	<body>
+		<div id="box1">상자입니다.</div>
+		
+	<table id="tbl1">
+		<tr>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>
+				<div style="background-color: yellow;width:100px;height:100px; overflow: auto;">
+					상자입니다.상자입니다.상자입니다.상자입니다.상자입니다.상자입니다.상자입니다.상자입니다.상자입니다.상자입니다.상자입니다.상자입니다.상자입니다.상자입니다.상자입니다.상자입니다.상자입니다.상자입니다.상자입니다.상자입니다.상자입니다.상자입니다.상자입니다.상자입니다.상자입니다.상자입니다.상자입니다.상자입니다.상자입니다.상자입니다.상자입니다.상자입니다.상자입니다.상자입니다.상자입니다.상자입니다.상자입니다.상자입니다.상자입니다.상자입니다.상자입니다.상자입니다.상자입니다.상자입니다.상자입니다.상자입니다.상자입니다.상자입니다.
+				</div>
+			</td>
+			<td></td>
+		</tr>
+	</table>
+
+	</body>
+</html>
