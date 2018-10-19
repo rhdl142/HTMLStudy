@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel = "stylesheet" href="/WebClientTest/css/css/basic.css">
+	<style>
+		#desc {
+			/* visibility: hidden; */
+			display : none;
+		}
+		#cb1:checked + label + #desc {
+			display : block;
+		}
+		#cb1:checked ~ #desc {}
+		
+		#box {
+			border: 1px solid gray;
+			width : 400px;
+			margin : 50px 0px;
+		}
+		
+		#box #cb2 {
+			display:none;
+		}
+		#box label {
+			background-color : #ddd;
+			width : calc(100% - 20px);
+			display : inline-block;
+			padding : 10px;
+			cursor : pointer;
+		}
+		#box #desc2 {
+			display: none;
+			padding : 10px;
+		}		
+		#box #cb2:checked ~ #desc2 {
+			display: block;
+		}
+		/*  
+		.item label {
+			text-decoration: line-through;
+		} 
+		*/
+		
+		.item input[type='checkbox']:checked + label {
+			text-decoration: line-through;
+			opacity: .5;
+		}
+		
+		.item input[type='checkbox']:checked {
+			opacity: .5;
+		}
+			
+	</style>
+	<body>
+		<!-- ex40_selector.html -->
+		
+		<input type="checkbox" id="cb1"><label for="cb1">자바의 클래스</label></input>
+		
+		<p id="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis rerum molestiae velit reiciendis culpa quam nam blanditiis iste excepturi saepe molestias ipsam illum exercitationem commodi ab rem natus unde quasi itaque dicta ratione dolorum deleniti! Corrupti ad fugiat magnam consequuntur fugit beatae sequi a harum. Numquam sequi aut similique provident praesentium blanditiis culpa. Harum ab saepe quidem esse doloribus modi fugiat nostrum cumque ad hic facilis deleniti pariatur ipsa ratione enim totam quis libero illo consequatur molestiae. Cumque ea aliquam temporibus sint accusamus optio explicabo corrupti maiores magni eligendi commodi fugiat recusandae at expedita aperiam voluptatem iste. Fugiat consequuntur accusantium magni pariatur culpa vel fuga eligendi facilis qui animi dolorum aperiam deserunt aliquam unde sint aliquid voluptate quod tempore. Debitis modi perferendis dicta delectus harum voluptas eligendi tempore quae temporibus dolor ad numquam et sequi enim nisi labore dolorum. Iusto quasi veritatis architecto similique eaque assumenda cupiditate optio officia accusamus.</p>
+		
+		<hr>
+		
+		<div id="box">
+			<input type="checkbox" id="cb2"><label for="cb2">자바의 클래스</label></input>
+			
+			<p id="desc2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis rerum molestiae velit reiciendis culpa quam nam blanditiis iste excepturi saepe molestias ipsam illum exercitationem commodi ab rem natus unde quasi itaque dicta ratione dolorum deleniti! Corrupti ad fugiat magnam consequuntur fugit beatae sequi a harum. Numquam sequi aut similique provident praesentium blanditiis culpa. Harum ab saepe quidem esse doloribus modi fugiat nostrum cumque ad hic facilis deleniti pariatur ipsa ratione enim totam quis libero illo consequatur molestiae. Cumque ea aliquam temporibus sint accusamus optio explicabo corrupti maiores magni eligendi commodi fugiat recusandae at expedita aperiam voluptatem iste. Fugiat consequuntur accusantium magni pariatur culpa vel fuga eligendi facilis qui animi dolorum aperiam deserunt aliquam unde sint aliquid voluptate quod tempore. Debitis modi perferendis dicta delectus harum voluptas eligendi tempore quae temporibus dolor ad numquam et sequi enim nisi labore dolorum. Iusto quasi veritatis architecto similique eaque assumenda cupiditate optio officia accusamus.</p>
+		</div>
+		
+		<div>다른내용..</div>
+		
+		<hr>
+	
+		<h2>오늘의 할일</h2>
+		
+		<div class="item">
+			<input type="checkbox" id="cb5">
+			<label for="cb5">이클립스 설치하기</label>
+		</div>
+		<div class="item">
+			<input type="checkbox" id="cb6">
+			<label for="cb6">회식 참여하기</label>
+		</div>
+		<div class="item">
+			<input type="checkbox" id="cb3">
+			<label for="cb3">세탁소 셔츠 맡기기</label>
+		</div>
+		<div class="item">
+			<input type="checkbox" id="cb4">
+			<label for="cb4">목욕하기</label>
+		</div>
+		
+	</body>
+</html>

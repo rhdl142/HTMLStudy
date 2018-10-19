@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel = "stylesheet" href="/WebClientTest/css/css/basic.css">
+	<style>
+		#parent div:nth-child(3) { color: blue; } 
+		#parent :first-child { color: yellow; }
+		
+		
+		body {
+			background-image : url(../images/c09.jpg);
+		}
+		
+		#txt1 {
+			/* background-color : transparent; */ /* 투명색 */
+			/* background-color : rgba(255,255,255,0.5); */ /* 배경만 반투명 */
+		}
+		
+		#txt2 {
+			opacity : 0.5; /* 모두 다 반투명 배경,글자,테두리 */
+		}
+	</style>
+	<body>
+		<!-- ex39_selector.htm -->
+	
+		<div id="parent">
+			<div>자식1</div>
+			<div>자식2</div>
+			<div>자식3</div>
+			<div>자식4</div>
+			<div>자식5</div>
+		</div>
+		
+		<hr>
+		
+		<input tyle="text" id="txt1" value="background-color 투면색 구현">
+		<input tyle="text" id="txt2" value="opacity 투명색 구현">
+		
+		<hr>
+		
+		<img src="../images/c05.jpg" style="opacity: 0.7">
+	</body>
+</html>
