@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel = "stylesheet" href="/WebClientTest/css/css/basic.css">
+	<style>
+		body {
+			overflow : scroll;
+		}
+	
+		#box1 {
+			margin: 200px auto;
+			transition: transform 1s;
+			/* transform: translate(0px, 0px); */
+			/* transform: scale(1, 1); */
+			transform: rotate(0deg);
+			/* transform: skew(0deg, 0deg); */
+		}
+		
+		#box1:hover {
+			/* transform: translate(100px, 0px); */
+			/* transform: scale(1, -1); */
+			transform: rotate(3600deg);
+			/* transform: skew(45deg, 0deg); */
+		}
+		
+		#menu {
+			width: 630px;
+			height: 126px;
+			margin: 0px auto;
+			transform: translate(0px, 0px);
+		}
+		
+		#menu img {
+			float: left;
+			transition: all 0.4s;
+			/* opacity : .3; */
+		}
+		
+		#menu img:hover {
+			transform: translate(0px, -10px);
+			/* opacity : 1; */
+			/* transform : scale(1.3,1.3); */
+			transform : rotate(72000deg);
+		}
+		
+		body {
+			padding-bottom: 300px;
+		}
+		
+		#tbl1 {
+			width : 500px;
+			margin : 100px auto;
+		}
+		
+		#tbl1 tr {
+			width : 500px;
+			/* transition : all 1s; */
+		}
+		
+		
+		#tbl1 tr:hover {
+			/* transform : translate(0px, 100px); */
+		}
+		
+		#tbl td {
+			width : 100px;
+			transition : all 1s;		
+		}
+		
+		#tbl td:hover {
+			transform : rotate(3600deg);
+		}
+		
+		
+		#tbl1 tr:nth-child(3n) {background-color : tomato;}
+		#tbl1 tr:nth-child(3n+1) {background-color : yellow;}
+		#tbl1 tr:nth-child(3n+2) {background-color : green;}
+	</style>
+	<body>
+		<!-- ex49_transform.html -->
+		
+		<div id="box1" class="box yellow big">상자</div>
+		
+		<nav id="menu">
+			<img src="../images/rect_icon06.png">
+			<img src="../images/rect_icon07.png">
+			<img src="../images/rect_icon08.png">
+			<img src="../images/rect_icon09.png">
+			<img src="../images/rect_icon010.png">
+			<div style="clear:both;"></div>
+		</nav>
+		
+		<hr />
+		
+		<table id="tbl1" class="table">
+			<tr>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+			</tr>
+			<tr>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+			</tr>
+			<tr>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+			</tr>
+			<tr>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+			</tr>
+			<tr>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+			</tr>
+			<tr>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+			</tr>
+			<tr>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+			</tr>
+			<tr>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+			</tr>
+			<tr>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+			</tr>
+			<tr>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+			</tr>
+			<tr>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+			</tr>
+			<tr>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+			</tr>
+			<tr>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+			</tr>
+			<tr>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+			</tr>
+			<tr>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+			</tr>
+			<tr>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+			</tr>
+			<tr>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+			</tr>
+			<tr>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+			</tr>
+			<tr>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+			</tr>
+			<tr>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+			</tr>
+		</table>
+	</body>
+</html>
