@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel = "stylesheet" href="/WebClientTest/css/css/basic.css">
+	<style>
+		#content {
+			border : 1px solid black;
+			width : 150px;
+			height : 250px;
+			overflow: hidden;
+		}
+		
+		#innerBox {
+			width: 760px;
+			height: 250px;
+			transition : all 3s;
+		}
+		
+		#innerBox:hover {
+			transform : translate(-602px,0px);
+		}
+		
+		#content .item {
+			border : 1px solid black;	
+			float : left;
+			height : 250px;
+			width : 150px;
+		}
+		
+		.item > img {
+			margin : 20px 10px;
+			border : 1px solid black;
+		}
+		
+		.txt {
+			font-size : 12px;
+			padding : 0px 8px;
+		}
+	</style>
+	<body>
+		<h1>Card</h1>
+	
+		<div id="content">
+			<div id="innerBox">
+				<div class="item">
+					<img src="../images/rect_icon01.png" alt="" />
+					<div class="txt">Lorem ipsum dolor sit amet sit amet sit amet sit amet.</div>
+				</div>
+				<div class="item">
+					<img src="../images/rect_icon02.png" alt="" />
+					<div class="txt">Perferendis tempora quo quae tempore.</div>
+				</div>
+				<div class="item">
+					<img src="../images/rect_icon03.png" alt="" />
+					<div class="txt">Hic accusantium voluptatem ipsa non.</div>
+				</div>
+				<div class="item">
+					<img src="../images/rect_icon04.png" alt="" />
+					<div class="txt">Facilis animi ea vitae mollitia?</div>
+				</div>
+				<div class="item">
+					<img src="../images/rect_icon05.png" alt="" />
+					<div class="txt">Iste aliquam .</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

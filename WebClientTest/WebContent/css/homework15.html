@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel = "stylesheet" href="/WebClientTest/css/css/basic.css">
+	<style>
+		#box {
+			width : 650px;
+			height : 800px;
+			border : 10px solid black;
+			margin : 0px auto;
+		}
+		
+		.circle {
+			width: 50px;
+			height: 50px;
+			border: 10px solid black;
+			background-color: tomato;
+			border-radius: 50%;
+			display : inline-block;
+			margin : 0px 9.2px;
+			animation-iteration-count : infinite;
+			animation-direction : alternate;
+			animation-timing-funftion : ease-in; 
+			animation-name : keyBall;
+		}
+		
+		div #circle1 { 
+			background-color : red;
+			animation-duration : 3s;
+		}
+		
+		div #circle2 { 
+			background-color : blue;
+			animation-duration : 1s;
+		}
+		
+		div #circle3 { 
+			background-color : yellow;
+			animation-duration : 5s;
+		}
+		
+		div #circle4 { 
+			background-color : green;
+			animation-duration : 0.3s;
+		}
+		
+		div #circle5 { 
+			background-color : brown;
+			animation-duration : 0.7s;
+		}
+		
+		div #circle6 { 
+			background-color : indigo;
+			animation-duration : 2s;
+		}
+		
+		div #circle7 { 
+			background-color : white;
+			animation-duration : 4s;
+		}
+		
+		
+		@keyframes keyBall {
+			from {
+				transform : translate(0px, 0px);
+			}
+			to {
+				transform : translate(0px, 730px);
+			}
+		}
+		
+		
+		
+		
+	</style>
+	<body>
+		<div id="box">
+			<div id="circle1" class="circle"></div>
+			<div id="circle2" class="circle"></div>
+			<div id="circle3" class="circle"></div>
+			<div id="circle4" class="circle"></div>
+			<div id="circle5" class="circle"></div>
+			<div id="circle6" class="circle"></div>
+			<div id="circle7" class="circle"></div>
+		</div>
+	</body>
+</html>

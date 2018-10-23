@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel = "stylesheet" href="/WebClientTest/css/css/basic.css">
+	<style>
+	
+	/*  
+		문제번호 한줄에 긋기
+		gif, jpg 밑에 줄 이미지에 맞춰서 긋기
+		이미지 중앙에 맞추기
+	*/
+	
+	
+		#nav {
+			position : fixed;
+			top : 0px;
+			left : 0px;
+			right : 0px;
+			height : 120px;
+			background-color : white;
+			width : 100%;
+			padding-top : 50px;
+			border-bottom : 1px solid #ccc;
+			text-align : center;
+		}
+		
+		#nav span {
+			font-weight : bold;
+			font-size : 14px;
+			color : #444;
+			display : inline-block;
+			padding : 0px 10px;
+			border-bottom : 1px solid #ccc;
+			margin-top : 10px;
+		} 
+		
+		label {
+			font-size : 40px;
+		}
+		
+		input {
+			margin : 30px 30px;
+			width : 20px;
+			height : 30px;
+		}
+		
+		#box {
+			width : 750px;
+			margin : 190px auto;
+			border : 1px solid black;
+		}
+		
+		#box img {
+			margin-top : 30px;
+			width : 230px; 
+			height : 230px;
+			opacity : 0.3;
+			transition : all 1s;
+			border-radius: 50%;
+			padding : 8px;
+		}
+		
+		#rbMenu1:checked ~ .gif { 
+			opacity : 1;
+			border-radius: 0%;
+		}
+		
+		#rbMenu2:checked ~ .jpg { 
+			opacity : 1;
+			border-radius: 0%; 
+		}
+		
+	</style>
+	<body>
+		<nav id="nav">
+			<span>문제01</span>
+			<span>문제02</span>
+			<span>문제03</span>
+			<span>문제04</span>
+			<span>문제05</span>
+			<span>문제06</span>
+			<span>문제07</span>
+			<div style="border-top: 1px solid #ddd;margin:7px auto;width: 450px;"></div>
+			<span>문제08</span>
+			<span>문제09</span>
+			<span>문제10</span>
+		</nav>
+		<div id="box">
+			<input type="radio" name="rbMenu" id="rbMenu1"> <label for="rbMenu1">gif</label>
+			<input type="radio" name="rbMenu" id="rbMenu2"> <label for="rbMenu2">jpg</label>
+			
+			<hr />
+			
+			<img src="../images/c3.gif" class="gif">
+			<img src="../images/c03.jpg" class="jpg">
+			<img src="../images/c4.gif" class="gif">
+			<img src="../images/c04.jpg" class="jpg">
+			<img src="../images/c5.gif" class="gif">
+			<img src="../images/c05.jpg" class="jpg">
+			<img src="../images/c5.gif" class="gif">
+			<img src="../images/c06.jpg" class="jpg">
+			<img src="../images/c6.gif" class="gif">
+			<img src="../images/c07.jpg" class="jpg">
+		</div>
+	</body>
+</html>

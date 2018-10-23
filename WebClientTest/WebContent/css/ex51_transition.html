@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel = "stylesheet" href="/WebClientTest/css/css/basic.css">
+	<style>
+	
+		#txt {
+			width: 800px;
+			padding: 15px;
+			border-width: 1px;
+			margin: 15px 5px;
+			/* opacity: 0; */
+			transition: all 1s;
+			/* height: 0px; */
+			overflow: hidden;
+			transform: scale(0, 0) rotate(0deg);
+			opacity: 0;
+		}
+		
+		#cb1:checked + label + #txt {
+			/* opacity: 1; */
+			/* padding: 15px;
+			border-width: 1px;
+			height: 350px; */
+			transform: scale(1, 1) rotate(3600deg);
+			opacity: 1;
+		}
+		
+		
+		body { padding-bottom: 300px; }
+		
+		.switch {
+			border: 20px solid #A9A9A9;
+			width: 500px;
+			height : 500px; 
+			transform: scale(1,1);
+		}
+		
+		.switch > input {
+			display: none;
+		}
+		
+		.switch > label {
+			width: 500px;
+			height: 126px;
+			display: block;
+			background-color: #eee;
+			cursor: pointer;
+			float: left;
+			position: relative;
+			left: 0px; top: 0px;
+			z-index: 2;
+		}
+		
+		/* 
+		.switch > div:hover + img {
+			transform: translate(0px, 0px);
+		} 
+		*/
+		
+		.switch > input:checked + label + img {
+			transform: translate(0px, 0px);
+		}
+		
+		.switch > input:checked + label {
+			background-color: #ccc;
+		}
+		
+		.switch > img {
+			float: left;
+			transform: translate(-550px, 0px);
+			transition: all .6s;
+		}
+		
+		.switch:after {
+			content: " ";
+			display: block;
+			clear: both;
+		}
+		
+		
+		#panel {
+			width: 300px;
+			height: 300px;
+			border: 1px solid black;
+		}
+		
+		#panel > div {
+			width: 100px;
+			height: 66px;
+			background-color: #ddd;
+			float: left;
+			outline: 1px solid gray;
+			text-align: center;
+			padding-top: 34px;
+		}
+		
+		#cat {
+			position: absolute;
+			left: 800px;
+			top: 600px;
+			transition: all 1s;
+		}
+		
+		#panel > div:nth-child(2):hover ~ #cat { top: 300px; }
+		#panel > div:nth-child(3):hover ~ #cat { top: 300px; left: 1100px; }
+		#panel > div:nth-child(4):hover ~ #cat { left: 500px; }
+		#panel > div:nth-child(6):hover ~ #cat { left: 1100px; }
+		#panel > div:nth-child(8):hover ~ #cat { top: 900px; }
+		
+		#dg img {
+			transition : all 1s;
+		}
+		
+		#dg img:hover {
+			border-radius: 50%;
+		}
+		
+		#menu {
+			border: 10px solid black;
+			width: 126px;
+			height: 126px;
+			overflow: hidden;
+		}
+		
+		#menu:hover > div {
+			transform: translate(-126px, 0px);
+		}
+		
+		#menu > div {
+			border: 0px solid red;
+			width: 630px;
+			transition : all 1s;
+		}
+		
+		#menu > div > img {
+			float: left;
+		}
+		
+		#rbMenu1:checked ~ #menu > div { transform: translate(-0px, 0px); }
+		#rbMenu2:checked ~ #menu > div { transform: translate(-126px, 0px); }
+		#rbMenu3:checked ~ #menu > div { transform: translate(-252px, 0px); }
+		#rbMenu4:checked ~ #menu > div { transform: translate(-378px, 0px); }
+		#rbMenu5:checked ~ #menu > div { transform: translate(-504px, 0px); }
+		
+	</style>
+	<body>
+		<!-- ex51_transition.htm -->
+		<input type="checkbox" id="cb1"> <label for="cb1">펼치기/닫기</label>
+		<div id="txt" class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi earum et architecto sapiente eveniet labore. Quam blanditiis pariatur delectus quasi deserunt accusantium molestiae adipisci nihil cumque sed eos ut veritatis quod quas obcaecati reiciendis enim placeat error voluptatem unde amet maiores laboriosam vero saepe voluptate perferendis non. Voluptatum doloribus consectetur laboriosam sequi assumenda totam cupiditate veritatis iure adipisci commodi ad aliquid minima quod sed facilis eveniet sunt! Laudantium tenetur commodi nihil aspernatur quos nesciunt illo asperiores voluptates dolore officia. Mollitia adipisci corrupti architecto nemo cumque! Cum id perspiciatis rerum ab ad debitis blanditiis consequuntur nulla laborum deserunt sed totam reiciendis.</div>
+		
+		<hr>
+		
+		<div class="switch">
+			<input type="checkbox" id="cb2">
+			<label for="cb2"></label>
+			<img src="../images/c2.gif" style="width :500px; height : 350px;">
+		</div> 
+		
+		<hr>
+		
+		<div id="panel">
+			<div></div>
+			<div>상</div>
+			<div></div>
+			<div>좌</div>
+			<div></div>
+			<div>우</div>
+			<div></div>
+			<div>하</div>
+			<div></div>
+			<img src="../images/c3.gif" id="cat" style="width : 200px; height : 250px;">
+		</div>
+	
+		<hr />
+		
+		<div id="dg">
+			<img src="../images/c01.jpg" style="width : 200px; height : 200px;">
+			<img src="../images/c02.jpg" style="width : 200px; height : 200px;">
+			<img src="../images/c03.jpg" style="width : 200px; height : 200px;">
+			<img src="../images/c04.jpg" style="width : 200px; height : 200px;">
+			<img src="../images/c05.jpg" style="width : 200px; height : 200px;">
+		</div>
+		
+		<input type="radio" name="rbMenu" id="rbMenu1" checked> <label for="rbMenu1">헤드폰</label>
+		<input type="radio" name="rbMenu" id="rbMenu2"> <label for="rbMenu2">쇼파</label>
+		<input type="radio" name="rbMenu" id="rbMenu3"> <label for="rbMenu3">집</label>
+		<input type="radio" name="rbMenu" id="rbMenu4"> <label for="rbMenu4">통화중</label>
+		<input type="radio" name="rbMenu" id="rbMenu5"> <label for="rbMenu5">전화기</label>
+
+		
+		<div id="menu">
+			<div>
+				<img src="../images/c8.gif" style="width : 126px; height : 126px;">
+				<img src="../images/c4.gif" style="width : 126px; height : 126px;">
+				<img src="../images/c3.gif" style="width : 126px; height : 126px;">
+				<img src="../images/c2.gif" style="width : 126px; height : 126px;">
+				<img src="../images/c1.gif" style="width : 126px; height : 126px;">
+			</div>
+		</div>
+	</body>
+</html>
