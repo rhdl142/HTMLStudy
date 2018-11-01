@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel = "stylesheet" href="/WebClientTest/css/css/basic.css">
+	<style>
+		
+	</style>
+	<script>
+		var btn1;
+		window.onload = functino() {
+			btn1 = document.all.btn1;
+			
+			//history 객체
+			// - window 자식 객체
+			// - (현재 세션에 한해서) 브라우저의 방문 기록 접근/조작 객체
+			
+			btn1.onclick = function() {
+				//뒤로가기 버튼과 동일
+				//window.history.back();
+				//앞으로가기 버튼과 동일
+				//window.history.forword();
+				//go(n) : n(양의 정수~음의정수)
+				//history.go(-1);
+				//history.go(-2);
+
+			}
+		}
+	</script>
+	<body>
+		<!-- ex18_history.html -->
+		<input type="button" name="btn1" value="테스트" />
+	</body>
+</html>

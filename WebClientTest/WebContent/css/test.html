@@ -6,62 +6,121 @@
 	</head>
 	<link rel = "stylesheet" href="/WebClientTest/css/css/basic.css">
 	<style>
-		body > div {
-			width: 400px;
-			margin: 0 auto;
+		#hoverMenu {
+			border : 10px solid red;
+			width : 980px;
+			height : 250px;
+			position : absolute;
+			left : 0px;
+			top : 0px;
 		}
 	
-		article {
-			width: 400px;
-			margin-top: 50px;
-			float: left;
-			position: relative;
+		#hoverMenu > div {
+			width : 120px;
+			border : 1px solid black;
+			float:left;
 		}
 	
-		article div {
-			width: 120px;
-			height: 50px;
-			background: #ccc;
-			float: left;
-			margin: 0 5px 5px 0;
+		#hoverMenu > div > ol {
+			padding : 0px;
+		}
+	
+		#hoverMenu > div > ol > li {
+			list-style: none;
+			border : 1px solid red;
 			text-align: center;
-			padding-top: 30px;
+			padding-top : 8px;
 		}
-	
-		article:first-child div:nth-child(2) {
-		    position: absolute;
-		    left: 40px;
-		    top: 25px;
-		    background: blue;
-		    color: #fff;
-		}
-		article:last-child div:nth-child(2) {
-		    transform: translate(40px, 25px);
-		    background: green;
-		    color: #fff;
-		}    
-	 
 		
+		#hoverMenu > div > ol > li > a{
+			text-decoration: none;
+		}
 	</style>
 	<body>
-		<div>
-			<article>
-			    <div>Box 1</div>
-			    <div>Box 2</div>
-			    <div>Box 3</div>
-			    <div>Box 4</div>
-			    <div>Box 5</div>
-			    <div>Box 6</div>
-			</article>
-	
-			<article>
-			    <div>Box 1</div>
-			    <div>Box 2</div>
-			    <div>Box 3</div>
-			    <div>Box 4</div>
-			    <div>Box 5</div>
-			    <div>Box 6</div>
-			</article>
-		</div>		
+		<!-- hoverMenu 내려오는 서브 메뉴 -->
+		   <div id="hoverMenu">
+		   		<div>
+			   		<ol>
+			   			<li><a href="">광민소개</a></li>
+			   			<li><a href="">광민교육</a></li>
+			   			<li><a href="">대학소개</a></li>
+			   			<li><a href="">총장 인삿말</a></li>
+			   			<li><a href="">캠퍼스 안내</a></li>
+			   		</ol>
+		   		</div>
+		   		<div>
+			   		<ol>
+			   			<li><a href="">대학홍보</a></li>
+			   			<li><a href="">수시모집</a></li>
+			   			<li><a href="">입학도우미</a></li>
+			   			<li><a href="">입학상담</a></li>
+			   			<li><a href="">정시모집</a></li>
+			   			<li><a href="">학생부종합</a></li>
+			   			
+			   		</ol>
+		   		</div>
+		   		<div>
+			   		<ol>
+			   			<li><a href="">공학과학대학</a></li>
+			   			<li><a href="">교양대학</a></li>
+			   			<li><a href="">대학-대학원</a></li>
+			   			<li><a href="">보건바이오대학</a></li>
+			   			<li><a href="">인문예술대학</a></li>
+			   			<li><a href="">일반대학원</a></li>
+			   			<li><a href="">자연과학대학</a></li>
+			   			<li><a href="">컴퓨터공학과</a></li>
+			   		</ol>
+		   		</div>
+		   		<div>
+			   		<ol>
+			   			<li><a href="">학사공지</a></li>
+			   			<li><a href="">학사일정</a></li>
+			   			<li><a href="">교직과정안내</a></li>
+			   			<li><a href="">장학안내</a></li>
+			   			<li><a href="">학사규정</a></li>
+			   			<li><a href="">제-증명서 발급</a></li>
+			   		</ol>
+		   		</div>
+		   		<div>
+			   		<ol>
+			   			<li><a href="">예비군소개</a></li>
+			   			<li><a href="">취-창업지원센터</a></li>
+			   			<li><a href="">통학버스</a></li>
+			   			<li><a href="">생활관 소개</a></li>
+			   			<li><a href="">자유 게시판</a></li>
+			   			<li><a href="">프리톡</a></li>
+			   			<li><a href="">학생커뮤니티</a></li>
+			   		</ol>
+		   		</div>
+		   		<div>
+			   		<ol>
+			   			<li><a href="">산학협력단</a></li>
+			   			<li><a href="">연구지원</a></li>
+			   			<li><a href="">산학혁렵단 인사말</a></li>
+			   			<li><a href="">일반공고</a></li>
+			   		</ol>
+		   		</div>
+		   		<div>
+			   		<ol>
+			   			<li><a href="">기구조직표</a></li>
+			   			<li><a href="">대학본부</a></li>
+			   			<li><a href="">대학현황</a></li>
+			   			<li><a href="">식단 안내</a></li>
+			   			<li><a href="">주차 안내</a></li>
+			   			<li><a href="">캠퍼스맵</a></li>
+			   		</ol>
+		   		</div>
+		   		<div>
+			   		<ol>
+			   			<li><a href="">GMU 로그인</a></li>
+			   			<li><a href="">MediaGMU</a></li>
+			   			<li><a href="">PhotoGMU</a></li>
+			   			<li><a href="">공지사항</a></li>
+			   			<li><a href="">보도자료</a></li>
+			   			<li><a href="">GMUT 설문조사</a></li>
+			   			<li><a href="">학생회 소개</a></li>
+			   		</ol>
+		   		</div>
+		   </div>
 	</body>
 </html>
