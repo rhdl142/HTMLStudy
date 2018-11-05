@@ -1,0 +1,18 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<title>Berryz WebShare</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="expires" content="mon, 06 jan 1990 00:00:01 GMT" />
+		<script language='JavaScript'>
+			var listSrc = (document.location + "").split('#')[1];
+		</script>
+	</head>
+
+	<frameset cols="180,*" frameborder='1' marginwidth='0' onload='WebShareList.location = listSrc;'>
+		<frame src="tree.htm?action=SkinFile" name="WebShareFolder" scrolling='auto' marginwidth='1' marginheight='1'/>
+		<frame src="about:blank" name="WebShareList" scrolling='auto' marginwidth='0' marginheight='0'/>
+	</frameset>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel = "stylesheet" href="/WebClientTest/css/css/basic.css">
+	<style>
+		
+	</style>
+	<script>
+		function use(form1) {
+			
+			//붐창의 ischeck 변수의
+			opener.ischeck = true;
+			
+			
+			opener.document.form1.txtID.value = form1.txtID.value;
+			opener.document.form1.txtPW.focus();
+			window.close();
+			//window의 멤버는 거의 예약어에 가깝다(window 프로퍼티와 동일한 이름의 변수를 만들지 말고,
+					//window 메소드와 동일한 이름의 함수를 만들지 말것.)
+		}
+	</script>
+	<body>
+		<!-- ex24_idcheck.html -->
+		
+		<h1>아이디 중복검사</h1>
+		
+		<form name="form1">
+			<label for="">아이디 :</label>
+			<input type="text" name="txtID" readonly />
+			<hr />
+			<input type="button" value="사용하기" name="btnUse" onclick ="use(this.form);"/>
+			<input type="button" value="창닫기" name="btnClose" onclick = "close();"/>
+		</form>
+	</body>
+</html>

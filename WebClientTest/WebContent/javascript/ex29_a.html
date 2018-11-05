@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel = "stylesheet" href="/WebClientTest/css/css/basic.css">
+	<style>
+		
+	</style>
+	<script>
+		var txt1, btn1, btn2;
+		
+		window.onload = function() {
+			txt1 = document.all.txt1;
+			btn1 = document.all.btn1;
+			btn2 = document.all.btn2;
+			
+			btn1.onclick = function() {
+				//쿠키종류
+				//	- 저장하는 시간에 따라 구분
+				//1. 메모리 쿠키
+				//	- 현재 쿠키
+				//	- 브라우저(프로세스)가 닫힐
+				때까지 유효
+				//	- 만료 시간 없음
+				//2. 하드 쿠키
+				//	- 메모리 쿠키를 보조 기억 장치에 물리적으로 저장(*.txt)
+				//	- 브라우저가 닫혀도 계속 이어서 사용가능
+				//	- 만료 시간 지정
+				//setCookie("data", txt1.value, 365);
+				setCookie("data", txt1.value, -1);
+			};
+			
+			btn2.onclick = function() {
+				alter(num);
+				alert(getCookie("data"));
+			}
+		}
+	</script>
+	<body>
+		<!-- ex29_a.html -->
+		
+		<h1>첫번째 페이지</h1>
+		
+		<fieldset>
+			<legend>페이지 이동하기</legend>
+			
+			<a href="ex29_a.html">첫번째 페이지</a>
+			<a href="ex29_b.html">두번째 페이지</a>
+			<a href="ex29_c.html">세번째 페이지</a>
+		</fieldset>
+		
+		<fieldset>
+			<input type="text" name="txt1" />
+			<input type="button" value="저장하기" name="btn1" />
+			<input type="button" value="불러오기" name="btn2" />
+		</fieldset>
+	</body>
+</html>

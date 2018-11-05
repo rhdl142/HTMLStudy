@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel = "stylesheet" href="/WebClientTest/css/css/basic.css">
+	<style>
+		div {
+			border : 1px solid black;
+			padding : 15px;
+			margin : 15px;
+		}
+		
+		#n8 {
+			border : 5px solid orange;
+		}
+	</style>
+	<script>
+		window.onload = function() {
+			document.getElementById("btn1").onclick = function() {
+				//Node 기본 구조 + 나를 기준으로 하는 상대 표현(검색)
+				var me = document.getElementById("n8");
+				
+				//DOM
+				//	- 문서상의 모든 태그(속성, PCDATA 등)을 객체화 시킨 뒤 트리 구조로 만든다.
+				//	- DOM 트리를 구성하는 요소 > 노드(Node)
+				//	- me > <dir id="n8"
+				
+				//Node, 노드
+				//	- 태그, 속성, PCDATA, 주석 등...
+				//1. nodeName
+				//2. nodeType
+				//3. nodeValue
+			}
+		}
+	</script>
+	<body>
+		<!-- ex34_DOM.html -->
+		
+		<input type="button" value="테스트" id="btn1" />
+		<hr />
+			
+		<div id="n1">
+			할아버지
+			<div id="n2">
+				큰아빠
+				<div id="n5">사촌</div>
+			</div>
+			<div id="n3">
+				아빠
+				<div id="n7">형</div>
+				<div id="n8">
+					나
+					<div id="n10">첫째 자식</div>
+					<div id="n11">
+						둘째 자식
+						<div id="n13">손자</div>
+					</div>
+					<div id="n12">셋째 자식</div>
+				</div>
+				<div id="n9">동생</div>
+			</div>
+			<div id="n4">
+				작은 아빠
+				<div id="n6">사촌</div>
+			</div>
+		</div>
+
+	</body>
+</html>
