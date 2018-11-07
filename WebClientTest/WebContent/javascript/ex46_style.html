@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link rel="stylesheet" href="/WebClientTest/css/css/basic.css">
+<style>
+	.box {
+		border: 1px solid gray;
+		width: 10px;
+		height: 10px;
+		position: absolute;
+	}
+</style>
+<script>
+	
+	var box;
+	var isDown = false;
+	
+	window.onmousedown = function() {
+		isDown = true;
+		
+		box = document.createElement("div"); //<div></div>
+		
+		box.className = "box"; //<div class="box"></div>
+		
+		box.style.left = event.clientX + "px";
+		box.style.top = event.clientY + "px";
+		
+		document.body.appendChild(box);
+	};
+	
+	window.onmouseup = function() {
+		isDown = false;
+	};
+	
+	window.onmousemove = function() {
+		if (isDown) {
+			box.style.width = event.clientX - parseInt(box.style.left) + "px";
+			box.style.height = event.clientY - parseInt(box.style.left) + "px";
+		}
+	};
+	
+</script>
+</head>
+<body>
+	<!-- ex46_style.htm -->
+	<div class="box"></div>
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
