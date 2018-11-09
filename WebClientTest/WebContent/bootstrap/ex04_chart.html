@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<style>
+	#chart1 { width: 800px; }
+</style>
+<script src="/WebClientTest/jquery/js/jquery-1.12.4.js"></script>
+<script src="/WebClientTest/bootstrap/js/highcharts.js"></script>
+<script>
+
+	$(document).ready(function() {
+		
+		Highcharts.chart('chart1', {
+
+		    title: {
+		        text: '2018년 노트북 판매량'
+		    },
+
+		    subtitle: {
+		        text: 'HP Slim Notebook'
+		    },
+
+		    yAxis: {
+		        title: {
+		            text: '노트북 판매량(만개)'
+		        }
+		    },
+		    
+		    //범례
+		    legend: {
+		        layout: 'vertical',
+		        align: 'right',
+		        verticalAlign: 'middle'
+		    },
+
+		    plotOptions: {
+		        series: {
+		            label: {
+		                connectorAllowed: false
+		            },
+		            pointStart: 1
+		        }
+		    },
+
+		    series: 
+		    [
+			    {
+			        name: '홍길동',
+			        data: [132, 322, 123, 84, 231, 98, 212, 32, 321, 200, 23, 31]
+			    }
+			    ,
+			    {
+			        name: '아무개',
+			        data: [132, 322, 123, 84, 231, 98, 212, 32, 321, 200, 23, 31]
+			    }
+		    ],
+
+		    responsive: {
+		        rules: [{
+		            condition: {
+		                maxWidth: 500
+		            },
+		            chartOptions: {
+		                legend: {
+		                    layout: 'horizontal',
+		                    align: 'center',
+		                    verticalAlign: 'bottom'
+		                }
+		            }
+		        }]
+		    }
+
+		});
+		
+	});
+	
+</script>
+</head>
+<body>
+	<!-- ex04_chart.htm -->
+	
+	<h1>jQuery Chart</h1>
+	
+	<div id="chart1"></div>
+	
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

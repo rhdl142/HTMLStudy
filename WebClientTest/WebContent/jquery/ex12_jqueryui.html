@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel="stylesheet" href="/WebClientTest/jquery/css/jquery-ui.css">
+	<style>
+		.box {
+			border : 1px solid black;
+			width : 350px; height : 350px;
+			background-color : yellow;
+		}
+	</style>
+	<script src="/WebClientTest/jquery/js/jquery-1.12.4.js"></script>
+	<script src="/WebClientTest/jquery/js/jquery-ui.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("#cat1").draggable({
+				//axis : "x"
+				grid: [128,128]
+			});		
+			
+			$("#cat2").draggable({
+				containment : "#box1"
+			});
+			
+			$("#cat3, #cat4, #cat5").draggable({
+				//containment:".box"
+				containment : "parent",
+				cursor:"pointer"
+			});
+
+		})
+	</script>
+	<body>
+		<!-- ex12_jQuery.html -->
+		<img src="../images/catty01.png" id="cat1" />
+		
+		<div class="box" id="box1">
+			<img src="../images/catty02.png" id="cat2" />
+		</div>
+		
+		<div class="box" id="box2">
+			<img src="../images/catty03.png" id="cat3">
+		</div>
+		
+		<div class="box" id="box3">
+			<img src="../images/catty04.png" id="cat4">
+		</div>
+		
+		<div class="box" id="box4">
+			<img src="../images/catty05.png" id="cat5">
+		</div>
+		
+	</body>
+</html>
